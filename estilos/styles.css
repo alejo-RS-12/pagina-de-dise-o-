@@ -1,0 +1,286 @@
+body {
+    background-color:#232326;
+    background-size: 100%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin: 0;
+    padding: 0;
+    transition: opacity 1s, background-color 1s, filter 1s
+    
+}
+.container {
+    position: relative;
+}
+
+.fade-out {
+    opacity: 0;
+    background-color: #000; /* Cambia el color de fondo a negro durante la transición */
+    filter: blur(10px); /* Añade un desenfoque durante la transición */
+}
+.logo{
+    height: 40px; /* Ajusta la altura de la imagen según sea necesario */
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton-blcknt {
+    z-index: 1; /* Asegúrate de que el botón esté por encima de la imagen de fondo */
+    width: 90; /* Ajusta el tamaño del botón según tus necesidades */
+    height: auto;
+}
+.fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Envía la imagen de fondo al fondo */
+    background-color: #232326;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 30px 20px;
+    border-bottom: 1px solid #ccc;
+    font-size: 40px;
+
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li {
+   display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #f0f0f0;
+    border-color: #999;
+}
+
+.HOME{
+    color: #ff7175;
+}
+
+.NEWIN{
+    color:#ffda12 ;
+}
+
+.CONTACTO{
+    color:#0dffbe ;
+}
+
+.categorias1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.categorias1 img{
+    width: 70%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+h2 {
+    text-align: center;
+    
+}
+
+.productos img {
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 30px;
+
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+    background-color:  #ff50b4
+}
+footer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer img{
+    height: 50px;
+}
+
+/*parte de contacto*/
+.contacto {
+    max-width: 100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.contact-form {
+    height: 90vh;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    padding: 0;
+    margin-bottom: 20%;
+
+}
+
+.titulo-contacto{
+    margin-top: 5%;
+    font-size: 0%;
+}
+
+.titulo-contacto img{
+    width: 50%;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 26% ;
+    color: #E5E3E0 ;
+    font-size: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+}
+
+.contact-form button {
+    width: 50%;
+    margin-left: 25.6%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.contact-form .note {
+    font-size: 25px;
+    text-align: center;
+    color:  #E5E3E0;
+}
+
+/*parte de new in */
+
+.img-port{
+    margin-left: 15%;
+}
+
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px;
+    justify-items: center;
+}
+
+.pruducto-item {
+    width: 80%;  /* Aumenta el ancho del contenedor si la imagen es más grande */
+}
+
+.pruducto-item p {
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.image-frame {
+    padding: 5%;  /* Puedes aumentar el padding si deseas más espacio alrededor de la imagen */
+    border-radius: 10px;
+    border: 5px solid transparent;
+    transition: transform 0.3s ease;
+}
+
+
+.image-frame:hover {
+    transform: scale(1.1);
+}
+
+.image-frame.purple {
+    background-color: #b055ff;
+}
+
+.image-frame.yellow {
+    background-color:  #ffda12;
+}
+
+.image-frame.green {
+    background-color: #0dffbe;
+}
+
+.image-frame.violet {
+    background-color:#ff50b4;
+}
+
+.image-frame.blue {
+    background-color:  #109eff;
+}
+
+.image-frame.pink{
+    background-color: #ff7175 ;
+}
+
+.image-frame img {
+    max-width: 100%;
+    width: 200%;  /* Ajusta este valor para agrandar la imagen */
+    height: auto;  /* Mantén la proporción de la imagen */
+    border-radius: 5px;
+}
+
+
+.separador{
+    height: 100px;
+    background-color:  #ff50b4 ;
+    border-color:#ff50b4 ;
+}
+
+.resaltadores{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.resaltadores img{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 90%;
+    height: 100%;
+}

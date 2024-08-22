@@ -1,0 +1,118 @@
+body {
+    background-color: grey;
+    background-size: 100%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin: 0;
+    padding: 0;
+    transition: opacity 1s, background-color 1s, filter 1s
+    
+}
+.container {
+    position: relative;
+}
+
+.fade-out {
+    opacity: 0;
+    background-color: #000; /* Cambia el color de fondo a negro durante la transición */
+    filter: blur(10px); /* Añade un desenfoque durante la transición */
+}
+
+.logo{
+    height: 40px; /* Ajusta la altura de la imagen según sea necesario */
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton-blcknt {
+    z-index: 1; /* Asegúrate de que el botón esté por encima de la imagen de fondo */
+    width: 90%; /* Ajusta el tamaño del botón según tus necesidades */
+    height: auto;
+}
+.fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Envía la imagen de fondo al fondo */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 30px 20px;
+    border-bottom: 1px solid #ccc;
+    font-size: 40px;
+
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li {
+   display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(100, 99, 99);
+    
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #f0f0f0;
+    border-color: #999;
+}
+.categorias1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.categorias1 img{
+    width: 70%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 11%;
+    font-size: 60px;
+    
+}
+
+.productos img {
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(89, 87, 87);
+}
+footer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer img{
+    height: 50px;
+}
